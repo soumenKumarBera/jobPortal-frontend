@@ -6,7 +6,7 @@ import axiosInstance from "../Intercepter/AxiosIntercepter";
 
 const loginAuth = async (login: any) => {
 
-  return axiosInstance.post(`/login`, login)
+  return axiosInstance.post(`/auth/login`, login)
   .then((response) => response.data)
   .catch((error) => {throw error})
 
