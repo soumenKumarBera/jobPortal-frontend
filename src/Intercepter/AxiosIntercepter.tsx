@@ -2,7 +2,7 @@ import axios, { InternalAxiosRequestConfig } from "axios";
 import { isTokenExpired } from "../Servicess/AuthService";
 
 const axiosInstance = axios.create({
-  baseURL: "http://localhost:8080",
+  baseURL: "https://jobportal-qmq5.onrender.com",
 });
 axiosInstance.interceptors.request.use(
   (config: InternalAxiosRequestConfig) => {

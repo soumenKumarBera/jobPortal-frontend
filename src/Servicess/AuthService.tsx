@@ -1,11 +1,12 @@
 import { jwtDecode } from "jwt-decode";
 import axios from "axios"
+import axiosInstance from "../Intercepter/AxiosIntercepter";
 
-const baseUrl = "http://localhost:8080/auth/"
+
 
 const loginAuth = async (login: any) => {
 
-  return axios.post(`${baseUrl}login`, login)
+  return axiosInstance.post(`/login`, login)
   .then((response) => response.data)
   .catch((error) => {throw error})
 
