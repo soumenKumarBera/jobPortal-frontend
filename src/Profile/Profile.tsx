@@ -103,7 +103,7 @@ const Profile = (props: any) => {
             className="!w-48 !h-48 md-mx:!w-40 md-mx:!h-40 sm-mx:!w-36 sm-mx:!h-36 xs-mx:!w-33 xs-mx:!h-33   border-8
             border-mine-shaft-700
             rounded-full"
-            src={profile.picture? `data:image/jpeg;base64,${profile.picture}`: "/Avatar.png"}
+            src={profile.picture? `data:image/jpeg;base64,${profile.picture}`: "/avatar.png"}
             alt=""
           />
           {hovered && (
